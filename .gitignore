@@ -8,5 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
-__pycache__/
-.venv/
+
+# Trained models and pipelines
+models/
