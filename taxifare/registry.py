@@ -1,6 +1,6 @@
 from pathlib import Path
 
-import joblib
+import pickle
 from sklearn.pipeline import Pipeline
 
 MODEL_PATH = Path(__file__).resolve().parent.parent / "models" / "logreg_pipeline.joblib"
@@ -23,4 +23,5 @@ def load_model(path: Path = MODEL_PATH) -> Pipeline:
         raise FileNotFoundError(
             f"No model found at {path}. Train and save the pipeline first."
         )
-    return joblib.load(path)
+    with open(path, "rb") as f:
+        return pickle.load(f)

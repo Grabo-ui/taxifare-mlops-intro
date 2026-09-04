@@ -1806,6 +1806,7 @@ name = "taxifare-mlops-intro"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "cloudpickle" },
     { name = "db-dtypes" },
     { name = "fastapi" },
     { name = "google-cloud-bigquery" },
@@ -1824,6 +1825,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "cloudpickle", specifier = ">=3.1.2" },
     { name = "db-dtypes", specifier = ">=1.7.1" },
     { name = "fastapi", specifier = ">=0.141.1" },
     { name = "google-cloud-bigquery", specifier = ">=3.44.0" },
