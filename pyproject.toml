@@ -8,6 +8,9 @@ authors = [
 ]
 requires-python = ">=3.12.9"
 dependencies = [
+    "fastapi>=0.141.1",
+    "pandas<3",
+    "uvicorn>=0.52.4",
     "db-dtypes>=1.7.1",
     "google-cloud-bigquery>=3.44.0",
     "matplotlib>=3.11.1",
