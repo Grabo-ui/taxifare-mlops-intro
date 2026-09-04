@@ -16,8 +16,4 @@ def predict(
     dropoff_latitude: float,
     passenger_count: int
 ):
-<<<<<<< HEAD
      return {'fare': passenger_count * 2.5}
-=======
-    return {'fare': float(passenger_count)}
->>>>>>> master
