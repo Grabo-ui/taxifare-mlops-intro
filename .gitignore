@@ -12,3 +12,4 @@ wheels/
 # Trained models and pipelines
 models/
 .env
+.env.yaml
